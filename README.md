@@ -1,17 +1,34 @@
-# React + Vite
+# Kedar Ghadyalji | Software Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Building intelligent, full-stack solutions with precision.**
 
-Currently, two official plugins are available:
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-7dd3fc?style=for-the-badge)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kedar-ghadyalji-98b7a6341)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ⚙️ Local Development
 
-## React Compiler
+Follow these steps to get the project running locally:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Clone the repository
 
-## Expanding the ESLint configuration
+git clone https://github.com/KedarGhadyalji/Kedar-Dev-Portfolio.git
+cd Kedar-Dev-Portfolio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Kedar-Dev-Portfolio
+### 2. Install dependencies
+
+npm install
+
+### 3. Configure Environment Variables
+
+Create a .env file in the root directory and add your credentials:
+VITE_DISCORD_WEBHOOK_URL=your_discord_webhook_url
+
+### 4. Run the development server
+
+npm run dev
+
+---
+
+<p align="center">
+  <b>© 2026 • Works on my machine • Shipping is someone else's problem — KG.</b>
+</p>

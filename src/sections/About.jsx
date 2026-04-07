@@ -38,26 +38,29 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="py-32 relative overflow-hidden bg-background"
+      className="py-32 relative overflow-hidden bg-background transition-colors duration-500"
     >
       {/* Subtle Background Accent */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-primary/5 blur-[120px] rounded-full pointer-events-none dark:opacity-100 opacity-50" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - The Narrative */}
           <div className="space-y-8 lg:sticky lg:top-32">
             <div className="animate-fade-in">
-              <span className="inline-block px-4 py-1 rounded-full glass text-xs font-bold tracking-widest uppercase text-primary border border-primary/20">
+              <span className="inline-block px-4 py-1 rounded-full glass text-xs font-bold tracking-widest uppercase text-primary border border-border">
                 About Me
               </span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-foreground">
               Turning complex problems
-              <span className="text-primary"> into </span>
+              <span className="text-primary dark:drop-shadow-[0_0_15px_rgba(125,211,252,0.3)]">
+                {" "}
+                into{" "}
+              </span>
               elegant,
-              <span className="font-serif italic font-normal text-white">
+              <span className="font-serif italic font-normal text-foreground/90">
                 {" "}
                 functional reality.
               </span>
@@ -66,7 +69,7 @@ export const About = () => {
             <div className="space-y-6 text-lg text-muted-foreground animate-fade-in animation-delay-200 leading-relaxed">
               <p>
                 I am a{" "}
-                <span className="text-foreground font-medium">
+                <span className="text-foreground font-bold">
                   Software Engineer
                 </span>{" "}
                 focused on building high-performance systems where architectural
@@ -75,7 +78,7 @@ export const About = () => {
 
               <p>
                 My technical foundation is rooted in{" "}
-                <span className="text-foreground font-medium">
+                <span className="text-foreground font-bold">
                   real-time logic and complex state management
                 </span>
                 . This background allows me to approach the modern web stack
@@ -85,7 +88,7 @@ export const About = () => {
 
               <p>
                 I specialize in architecting the bridge between{" "}
-                <span className="text-white font-medium">
+                <span className="text-foreground font-bold decoration-primary/30">
                   data-driven, intelligent backends
                 </span>{" "}
                 and fluid frontend interfaces. I ensure that sophisticated
@@ -94,7 +97,8 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="glass rounded-3xl p-8 border border-white/5 relative overflow-hidden group animate-fade-in animation-delay-300">
+            {/* Quote Block */}
+            <div className="glass rounded-3xl p-8 border border-border relative overflow-hidden group animate-fade-in animation-delay-300">
               <div className="absolute top-0 left-0 w-1 h-full bg-primary transition-all duration-500 group-hover:w-2" />
               <p className="text-xl font-medium italic text-foreground leading-relaxed">
                 "Great software is hidden in the details—it’s about the edge
@@ -109,7 +113,7 @@ export const About = () => {
             {highlights.map((item, idx) => (
               <div
                 key={idx}
-                className="glass p-8 rounded-3xl border border-white/5 hover:border-primary/30 transition-all duration-500 group animate-fade-in"
+                className="glass p-8 rounded-3xl border border-border hover:border-primary/30 transition-all duration-500 group animate-fade-in"
                 style={{ animationDelay: `${(idx + 1) * 150}ms` }}
               >
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500">
@@ -125,9 +129,9 @@ export const About = () => {
             ))}
 
             {/* CTA Box */}
-            <div className="sm:col-span-2 glass-strong p-8 rounded-3xl border border-primary/20 bg-primary/5 flex flex-col sm:flex-row items-center justify-between gap-6 animate-fade-in animation-delay-500">
+            <div className="sm:col-span-2 glass-strong p-8 rounded-3xl border border-primary/20 bg-primary/5 flex flex-col sm:flex-row items-center justify-between gap-6 animate-fade-in animation-delay-500 shadow-xl shadow-primary/5">
               <div>
-                <h4 className="text-xl font-bold text-white mb-1">
+                <h4 className="text-xl font-bold text-foreground mb-1">
                   Looking for a collaborator?
                 </h4>
                 <p className="text-sm text-muted-foreground">
@@ -136,7 +140,7 @@ export const About = () => {
                 </p>
               </div>
               <a href="#contact" className="shrink-0">
-                <button className="px-6 py-3 bg-primary text-primary-foreground font-bold rounded-xl hover:opacity-90 transition-opacity">
+                <button className="px-8 py-3 bg-primary text-primary-foreground font-bold rounded-2xl hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20">
                   Let's Talk
                 </button>
               </a>

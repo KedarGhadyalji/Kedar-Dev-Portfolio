@@ -30,7 +30,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t border-white/5 bg-background/50 backdrop-blur-sm">
+    <footer className="py-12 border-t border-border bg-background/50 backdrop-blur-sm transition-colors duration-300">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Logo & Narrative Copyright */}
@@ -77,7 +77,7 @@ export const Footer = () => {
                 aria-label={social.label}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-2xl glass border border-white/5 hover:border-primary/30 hover:bg-primary/5 hover:text-primary transition-all duration-300"
+                className="p-3 rounded-2xl glass border border-border hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all duration-300"
               >
                 <social.icon className="w-5 h-5" />
               </a>
